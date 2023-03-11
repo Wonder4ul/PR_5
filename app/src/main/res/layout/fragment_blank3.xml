@@ -9,7 +9,7 @@
     android:background="#AF6060"
     android:backgroundTint="#55C4D3"
     android:foregroundTint="#35737A"
-    tools:context=".BlankFragment2">
+    tools:context=".BlankFragment3">
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/list"
         android:layout_width="0dp"

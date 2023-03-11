@@ -14,6 +14,7 @@ import android.widget.Toast;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
+import androidx.navigation.Navigation;
 import androidx.recyclerview.widget.RecyclerView;
 
 import java.util.ArrayList;
@@ -45,9 +46,7 @@ public class BlankFragment3 extends Fragment {
             @Override
             public void onBookClick(BookInfo state, int position) {
 
-                Toast.makeText(getContext(), "Был выбран пункт " + state.getName(),
-                        Toast.LENGTH_SHORT).show();
-                Log.i("TAG", "Был выбран пункт: " + state.getName());
+                Navigation.findNavController(view).navigate(R.id.action_blankFragment3_to_blankFragment2);
             }
         };
         BookRecycleAdapter adapter = new BookRecycleAdapter(getContext(), books, bookClickListener);

@@ -8,7 +8,7 @@
     android:background="#AF6060"
     android:backgroundTint="#55C4D3"
     android:foregroundTint="#35737A"
-    tools:context=".MainActivity">
+    tools:context=".BlankFragment">
 
     <RelativeLayout
         android:layout_width="276dp"
