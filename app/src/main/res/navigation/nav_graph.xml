@@ -21,6 +21,12 @@
         <action
             android:id="@+id/action_blankFragment2_to_blankFragment3"
             app:destination="@id/blankFragment3" />
+        <action
+            android:id="@+id/confirmationAction"
+            app:destination="@id/blankFragment2" />
+        <argument
+            android:name="bookInfo"
+            android:defaultValue="x" />
     </fragment>
     <fragment
         android:id="@+id/blankFragment3"
@@ -30,6 +36,10 @@
         <action
             android:id="@+id/action_blankFragment3_to_blankFragment2"
             app:destination="@id/blankFragment2" />
+        <argument
+            android:name="userName"
+            app:argType="string"
+            android:defaultValue="Бодя" />
     </fragment>
 </navigation>
 

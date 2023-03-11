@@ -41,6 +41,7 @@ public class BlankFragment extends Fragment {
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+
                 Navigation.findNavController(view).navigate(R.id.action_blankFragment_to_blankFragment2);
             }
         });

@@ -179,18 +179,11 @@
             app:layout_constraintTop_toBottomOf="@+id/relativeLayout">
 
             <Button
-                android:id="@+id/buttonToList1"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:backgroundTint="@color/button_back"
-                android:text="@string/_1"/>
-
-            <Button
                 android:id="@+id/buttonToList2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:backgroundTint="@color/button_back"
-                android:text="Переход к списку 2"
+                android:text="Переход к списку"
                 tools:layout_editor_absoluteX="2dp"
                 tools:layout_editor_absoluteY="591dp" />
         </LinearLayout>

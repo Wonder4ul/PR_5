@@ -42,11 +42,15 @@ public class BlankFragment3 extends Fragment {
         super.onViewCreated(view, savedInstanceState);
         setInitialData();
         RecyclerView recyclerView = view.findViewById(R.id.list);
+
+        String str = getArguments().getString("key1");
+        Toast.makeText(getContext(), "Добро пожаловать, " + str, Toast.LENGTH_SHORT).show();
         BookRecycleAdapter.OnBookClickListener bookClickListener = new BookRecycleAdapter.OnBookClickListener() {
             @Override
             public void onBookClick(BookInfo state, int position) {
-
-                Navigation.findNavController(view).navigate(R.id.action_blankFragment3_to_blankFragment2);
+                Bundle bundle = new Bundle();
+                bundle.putString("key2", state.getName());
+                Navigation.findNavController(view).navigate(R.id.action_blankFragment3_to_blankFragment2, bundle);
             }
         };
         BookRecycleAdapter adapter = new BookRecycleAdapter(getContext(), books, bookClickListener);
