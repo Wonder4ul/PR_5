@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">PR_5</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="_1">Переход к списку 1</string>
+</resources>
